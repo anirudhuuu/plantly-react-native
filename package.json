@@ -17,6 +17,7 @@
     "eslint-plugin-react-native": "^5.0.0",
     "expo": "~52.0.28",
     "expo-constants": "~17.0.5",
+    "expo-haptics": "~14.0.1",
     "expo-linking": "~7.0.5",
     "expo-router": "~4.0.17",
     "expo-status-bar": "~2.0.1",
