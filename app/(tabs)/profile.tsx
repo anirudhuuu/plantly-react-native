@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View } from "react-native";
 import { theme } from "@/theme";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function ProfileScreen() {
   return (
