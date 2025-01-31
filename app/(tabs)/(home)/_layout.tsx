@@ -12,7 +12,7 @@ export default function Layout() {
           title: "Home",
           headerRight: () => (
             <Link href="/new" asChild>
-              <Pressable hitSlop={20}>
+              <Pressable hitSlop={20} style={{ marginRight: 12 }}>
                 <AntDesign
                   name="pluscircleo"
                   size={24}

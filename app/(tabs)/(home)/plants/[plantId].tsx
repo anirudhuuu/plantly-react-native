@@ -5,7 +5,14 @@ import { theme } from "@/theme";
 import { differenceInCalendarDays, format } from "date-fns";
 import { useLocalSearchParams, useNavigation, useRouter } from "expo-router";
 import { useEffect } from "react";
-import { Alert, Pressable, StyleSheet, Text, View } from "react-native";
+import {
+  Alert,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 
 const fullDateFormat = "LLL d yyyy, h:mm aaa";
 
@@ -65,7 +72,7 @@ export default function PlantDetails() {
   }
 
   return (
-    <View style={styles.detailsContainer}>
+    <ScrollView style={styles.detailsContainer}>
       <View style={{ alignItems: "center" }}>
         <PlantlyImage imageUri={plant.imageUri} />
         <View style={styles.spacer} />
@@ -88,7 +95,7 @@ export default function PlantDetails() {
       <Pressable style={styles.deleteButton} onPress={handleDeletePlant}>
         <Text style={styles.deleteButtonText}>Delete</Text>
       </Pressable>
-    </View>
+    </ScrollView>
   );
 }
 
@@ -106,7 +113,6 @@ const styles = StyleSheet.create({
     padding: 12,
     backgroundColor: theme.colorWhite,
     flex: 1,
-    justifyContent: "center",
   },
   key: {
     marginRight: 8,
