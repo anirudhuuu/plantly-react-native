@@ -17,3 +17,17 @@ bunx expo prebuild --platform android
 ```bash
 bunx expo run:android
 ```
+
+### Deep Link
+
+#### Open plant detail screen
+
+```bash
+bunx uri-scheme open plantly://plants/<plantId> --android
+```
+
+#### Open plant detail screen with query params
+
+```bash
+bunx uri-scheme open plantly://plants/<plantId>\?action=water --android
+```

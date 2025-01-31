@@ -28,10 +28,20 @@ export default function PlantDetails() {
   const navigation = useNavigation();
 
   useEffect(() => {
+    if (params.action === "water") {
+      if (typeof plantId === "string") {
+        waterPlant(plantId);
+      }
+    }
+  }, [params.action, plantId, waterPlant]);
+
+  useEffect(() => {
+    console.log("PlantDetails mounted", plant?.id);
+
     navigation.setOptions({
       title: plant?.name,
     });
-  }, [plant?.name, navigation]);
+  }, [plant?.id, plant?.name, navigation]);
 
   const handleWaterPlant = () => {
     if (typeof plantId === "string") {
