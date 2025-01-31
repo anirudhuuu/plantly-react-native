@@ -17,7 +17,7 @@ type PlantsState = {
   addPlant: (
     name: string,
     wateringFrequencyDays: number,
-    imageUri?: string
+    imageUri?: string,
   ) => Promise<void>;
   removePlant: (plantId: string) => void;
   waterPlant: (plantId: string) => void;
@@ -31,20 +31,25 @@ export const usePlantStore = create(
       addPlant: async (
         name: string,
         wateringFrequencyDays: number,
-        imageUri?: string
+        imageUri?: string,
       ) => {
         const savedImageUri =
           FileSystem.documentDirectory +
           `${new Date().getTime()}-${imageUri?.split("/").slice(-1)[0]}`;
 
         if (imageUri) {
-          await FileSystem.copyAsync({
-            from: imageUri,
-            to: savedImageUri,
-          });
+          try {
+            await FileSystem.copyAsync({
+              from: imageUri,
+              to: savedImageUri,
+            });
+          } catch (error) {
+            console.warn("Failed to copy image:", error);
+            return;
+          }
         }
 
-        return set((state) => {
+        set((state) => {
           return {
             ...state,
             nextId: state.nextId + 1,
@@ -54,6 +59,7 @@ export const usePlantStore = create(
                 name,
                 wateringFrequencyDays,
                 imageUri: imageUri ? savedImageUri : undefined,
+                lastWateredAtTimestamp: 0,
               },
               ...state.plants,
             ],
@@ -61,7 +67,17 @@ export const usePlantStore = create(
         });
       },
       removePlant: (plantId: string) => {
-        return set((state) => {
+        set((state) => {
+          const plantToRemove = state.plants.find(
+            (plant) => plant.id !== plantId,
+          );
+
+          if (plantToRemove?.imageUri) {
+            FileSystem.deleteAsync(plantToRemove.imageUri, {
+              idempotent: true,
+            }).catch((err) => console.warn("Failed to remove image", err));
+          }
+
           return {
             ...state,
             plants: state.plants.filter((plant) => plant.id !== plantId),
@@ -88,6 +104,6 @@ export const usePlantStore = create(
     {
       name: "plantly-plants-store",
       storage: createJSONStorage(() => AsyncStorage),
-    }
-  )
+    },
+  ),
 );
