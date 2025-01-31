@@ -23,6 +23,12 @@ export default function Layout() {
           ),
         }}
       />
+      <Stack.Screen
+        name="plants/[plantId]"
+        options={{
+          title: "",
+        }}
+      />
     </Stack>
   );
 }
