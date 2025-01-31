@@ -1,6 +1,6 @@
 import { theme } from "@/theme";
-import { Platform, Pressable, StyleSheet, Text } from "react-native";
 import * as Haptics from "expo-haptics";
+import { Platform, Pressable, StyleSheet, Text } from "react-native";
 
 type Props = {
   title: string;

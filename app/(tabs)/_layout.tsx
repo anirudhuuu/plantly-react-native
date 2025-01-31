@@ -8,7 +8,7 @@ import { Pressable } from "react-native";
 
 export default function Layout() {
   const hasFinishedOnboarding = useUserStore(
-    (state) => state.hasFinishedOnboarding
+    (state) => state.hasFinishedOnboarding,
   );
 
   if (!hasFinishedOnboarding) {

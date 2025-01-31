@@ -23,6 +23,6 @@ export const useUserStore = create(
     {
       name: "plantly-user-store",
       storage: createJSONStorage(() => AsyncStorage),
-    }
-  )
+    },
+  ),
 );
