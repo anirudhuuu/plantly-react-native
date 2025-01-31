@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@expo-google-fonts/caveat": "^0.2.3",
     "@expo/vector-icons": "^14.0.2",
     "@react-native-async-storage/async-storage": "1.23.1",
     "date-fns": "^4.1.0",
@@ -20,6 +21,7 @@
     "expo-constants": "~17.0.5",
     "expo-dev-client": "~5.0.10",
     "expo-file-system": "~18.0.7",
+    "expo-font": "~13.0.3",
     "expo-haptics": "~14.0.1",
     "expo-image-picker": "~16.0.4",
     "expo-linear-gradient": "~14.0.2",

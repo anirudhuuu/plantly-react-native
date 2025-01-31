@@ -4,6 +4,7 @@
     "": {
       "name": "plantly",
       "dependencies": {
+        "@expo-google-fonts/caveat": "^0.2.3",
         "@expo/vector-icons": "^14.0.2",
         "@react-native-async-storage/async-storage": "1.23.1",
         "date-fns": "^4.1.0",
@@ -14,6 +15,7 @@
         "expo-constants": "~17.0.5",
         "expo-dev-client": "~5.0.10",
         "expo-file-system": "~18.0.7",
+        "expo-font": "~13.0.3",
         "expo-haptics": "~14.0.1",
         "expo-image-picker": "~16.0.4",
         "expo-linear-gradient": "~14.0.2",
@@ -308,6 +310,8 @@
     "@eslint/eslintrc": ["@eslint/eslintrc@2.1.4", "", { "dependencies": { "ajv": "^6.12.4", "debug": "^4.3.2", "espree": "^9.6.0", "globals": "^13.19.0", "ignore": "^5.2.0", "import-fresh": "^3.2.1", "js-yaml": "^4.1.0", "minimatch": "^3.1.2", "strip-json-comments": "^3.1.1" } }, "sha512-269Z39MS6wVJtsoUl10L60WdkhJVdPG24Q4eZTH3nnF6lpvSShEK3wQjDX9JRWAUPvPh7COouPpU9IrqaZFvtQ=="],
 
     "@eslint/js": ["@eslint/js@8.57.1", "", {}, "sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q=="],
+
+    "@expo-google-fonts/caveat": ["@expo-google-fonts/caveat@0.2.3", "", {}, "sha512-Hx57R3t309cj/QUbwWclyD7j+S2cA7C01e/VG/Xue9aO7exQF2zqwp+hlmnuPqxbbwL1+gOJhs3Nb86wdX0c2w=="],
 
     "@expo/bunyan": ["@expo/bunyan@4.0.1", "", { "dependencies": { "uuid": "^8.0.0" } }, "sha512-+Lla7nYSiHZirgK+U/uYzsLv/X+HaJienbD5AKX1UQZHYfWaP+9uuQluRB4GrEVWF0GZ7vEVp/jzaOT9k/SQlg=="],
 
