@@ -37,63 +37,29 @@ Plantly is an intuitive React Native application built with Expo, designed to he
 
 ## Screenshots
 
-### Custom icon
+| Custom Icon                                                      | Splash Screen                                                      | Onboarding                                                      |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------- |
+| <img src="./screenshots/01.png" alt="Custom Icon" width="200" /> | <img src="./screenshots/02.png" alt="Splash Screen" width="200" /> | <img src="./screenshots/03.png" alt="Onboarding" width="200" /> |
 
-<img src="./screenshots/01.png" alt="Custom Icon" width="200" />
+| Home Screen                                                      | Add Plant                                                      | Pick Plant Image                                                      |
+| ---------------------------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------------------- |
+| <img src="./screenshots/04.png" alt="Home Screen" width="200" /> | <img src="./screenshots/05.png" alt="Add Plant" width="200" /> | <img src="./screenshots/06.png" alt="Pick Plant Image" width="200" /> |
 
-### Splash screen
+| Crop Picked Image                                                      | Empty Form State                                                      | Filled Form State                                                      |
+| ---------------------------------------------------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| <img src="./screenshots/07.png" alt="Crop picked image" width="200" /> | <img src="./screenshots/08.png" alt="Empty Form State" width="200" /> | <img src="./screenshots/09.png" alt="Filled Form State" width="200" /> |
 
-<img src="./screenshots/02.png" alt="Splash Screen" width="200" />
+| Filled Form State Full                                                      | Home Screen with Plants                                                      | Plant Details                                                      |
+| --------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| <img src="./screenshots/10.png" alt="Filled Form State full" width="200" /> | <img src="./screenshots/11.png" alt="Home Screen with Plants" width="200" /> | <img src="./screenshots/12.png" alt="Plant Details" width="200" /> |
 
-### Onboarding
+| Water Plant                                                      | Delete Plant                                                      | Quick Actions                                                      |
+| ---------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------ |
+| <img src="./screenshots/13.png" alt="Water Plant" width="200" /> | <img src="./screenshots/14.png" alt="Delete Plant" width="200" /> | <img src="./screenshots/15.png" alt="Quick Actions" width="200" /> |
 
-<img src="./screenshots/03.png" alt="Onboarding" width="200" />
-
-### Home screen
-
-<img src="./screenshots/04.png" alt="Home Screen" width="200" />
-
-### Add plant
-
-<img src="./screenshots/05.png" alt="Add Plant" width="200" />
-
-### Pick plant image
-
-<img src="./screenshots/06.png" alt="Pick Plant Image" width="200" />
-
-<img src="./screenshots/07.png" alt="Crop picked image" width="200" />
-
-### Empty form state
-
-<img src="./screenshots/08.png" alt="Empty Form State" width="200" />
-
-### Filled form state
-
-<img src="./screenshots/09.png" alt="Filled Form State" width="200" />
-
-<img src="./screenshots/10.png" alt="Filled Form State full" width="200" />
-
-### Home screen with plants
-
-<img src="./screenshots/11.png" alt="Home Screen with Plants" width="200" />
-
-### Plant details
-
-<img src="./screenshots/12.png" alt="Plant Details" width="200" />
-
-<img src="./screenshots/13.png" alt="Water Plant" width="200" />
-
-### Delete plant
-
-<img src="./screenshots/14.png" alt="Delete Plant" width="200" />
-
-### Quick actions
-
-<img src="./screenshots/15.png" alt="Quick Actions" width="200" />
-
-### Deep linking
-
-<img src="./screenshots/16.png" alt="Deep Linking" width="200" />
+| Deep Linking                                                      |
+| ----------------------------------------------------------------- |
+| <img src="./screenshots/16.png" alt="Deep Linking" width="200" /> |
 
 ## Development Commands
 
