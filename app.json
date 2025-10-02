@@ -16,7 +16,10 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anirudhjwala.plantly"
+      "package": "com.anirudhjwala.plantly",
+      "compileSdkVersion": 35,
+      "targetSdkVersion": 35,
+      "buildToolsVersion": "35.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png",
