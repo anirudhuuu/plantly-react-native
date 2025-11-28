@@ -1,11 +1,26 @@
+import { Caveat_400Regular } from "@expo-google-fonts/caveat";
 import * as QuickActions from "expo-quick-actions";
 import { useQuickActionRouting } from "expo-quick-actions/router";
+import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 import { Platform } from "react-native";
 
+SplashScreen.preventAutoHideAsync();
+
 export default function RootLayout() {
   useQuickActionRouting();
+
+  const [fontsLoaded] = useFonts({
+    Caveat_400Regular,
+  });
+
+  useEffect(() => {
+    if (fontsLoaded) {
+      SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
 
   useEffect(() => {
     QuickActions.setItems([
@@ -17,6 +32,10 @@ export default function RootLayout() {
       },
     ]);
   }, []);
+
+  if (!fontsLoaded) {
+    return null;
+  }
 
   return (
     <Stack>
